@@ -20,32 +20,96 @@
   <input type="hidden" name="attr_sheetversion" value="1.0" />
   <div class="sheet-main">
     <div class="top-level-container">
+      <div class="top-row-column card name-container">
+        <div class="name-grid">
+          <div class="name-grid-div1 grid-cell-content"><img style="width:2500px;height:auto"
+              src="https://raw.githubusercontent.com/MichaelTurbe/swords-and-wizardry-roll20/main/swlogo.png"
+              alt="Swords & Wizardry"></div>
+          <div class="name-grid-div2 grid-cell-content">
+            <p class="text">Name:</p>
+          </div>
+          <div class="name-grid-div3 grid-cell-content"><input type="text" class="text-input-in-cell"></div>
+          <div class="name-grid-div4 grid-cell-content">
+            <p class="text">Class:</p>
+          </div>
+          <div class="name-grid-div5">
+            <select name="attr_characterclass" class="select-in-long-cell" data-i18n-placeholder="characterclass"
+              placeholder="Character Class">
+              <option value="Assassin">Assassin</option>
+              <option value="Cleric">Cleric</option>
+              <option value="Druid">Druid</option>
+              <option value="Fighter">Fighter</option>
+              <option value="Magic-User">Magic-User</option>
+              <option value="Monk">Monk</option>
+              <option value="Paladin">Paladin</option>
+              <option value="Ranger">Ranger</option>
+              <option value="Thief">Thief</option>
+            </select>
+          </div>
+          <div class="name-grid-div6 grid-cell-content">
+            <p class="text">Ancestry:</p>
+          </div>
+          <div class="name-grid-div7 grid-cell-content"><input type="text" class="text-input-in-cell"></div>
+          <div class="name-grid-div8 grid-cell-content">
+            <p class="text">Deity:</p>
+          </div>
+          <div class="name-grid-div9 grid-cell-content"><input type="text" class="text-input-in-cell"></div>
+          <div class="name-grid-div10 grid-cell-content">
+            <p class="text">Languages:</p>
+          </div>
+          <div class="name-grid-div11 grid-cell-content"><input type="text" class="text-input-in-cell"></div>
+        </div>
+      </div>
+      <div class="top-row-column card stats-container">
+        <div class="level-grid">
+          <div class="level-grid-div1 grid-cell-content">
+            <p class="text">Level:</p>
+          </div>
+          <div class="level-grid-div2 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
+          <div class="level-grid-div3 grid-cell-content">
+            <p class="text">Max HP:</p>
+          </div>
+          <div class="level-grid-div4 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
+          <div class="level-grid-div5 grid-cell-content">
+            <p class="text">Curr HP:</p>
+          </div>
+          <div class="level-grid-div6 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
+          <div class="level-grid-div7 grid-cell-content">
+            <p class="text">XP:</p>
+          </div>
+          <div class="level-grid-div8 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
+          <div class="level-grid-div9 grid-cell-content">
+            <p class="text">XP Bonus:</p>
+          </div>
+          <div class="level-grid-div10 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
+        </div>
+      </div>
       <div class="top-row-column card stats-container">
         <div class="stats-grid">
           <div class="stats-div1 grid-cell-content">
             <p class="text">Strength</p>
           </div>
-          <div class="stats-div2 grid-cell-content"><input type="text" class="in-cell"></div>
+          <div class="stats-div2 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
           <div class="stats-div3 grid-cell-content">
             <p class="text">Dexterity</p>
           </div>
-          <div class="stats-div4 grid-cell-content"><input type="text" class="in-cell"></div>
+          <div class="stats-div4 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
           <div class="stats-div5 grid-cell-content">
             <p class="text">Constitution</p>
           </div>
-          <div class="stats-div6 grid-cell-content"><input type="text" class="in-cell"></div>
+          <div class="stats-div6 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
           <div class="stats-div7 grid-cell-content">
             <p class="text">Intelligence</p>
           </div>
-          <div class="stats-div8 grid-cell-content"><input type="text" class="in-cell"></div>
+          <div class="stats-div8 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
           <div class="stats-div9 grid-cell-content">
             <p class="text">Wisdom</p>
           </div>
-          <div class="stats-div10 grid-cell-content"><input type="text" class="in-cell"></div>
+          <div class="stats-div10 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
           <div class="stats-div11 grid-cell-content">
             <p class="text">Charisma</p>
           </div>
-          <div class="stats-div12 grid-cell-content"><input type="text" class="in-cell"></div>
+          <div class="stats-div12 grid-cell-content"><input type="text" class="text-input-in-small-cell"></div>
           <div class="div13 grid-cell-content">
             <span style="font-family:dicefontd20;">t</span>
           </div>
@@ -61,6 +125,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </body>

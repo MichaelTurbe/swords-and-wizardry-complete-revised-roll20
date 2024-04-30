@@ -26,7 +26,12 @@
   max-height: 290px;
 }
 
-.in-cell {
+.name-container {
+  /* min-width: 200px; */
+  padding: 5px;
+}
+
+.text-input-in-small-cell {
   justify-self: center;
   align-self: center;
   height: 27px;
@@ -35,13 +40,36 @@
   max-width: 30px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   text-align: center;
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   background-color: transparent;
+}
+
+.text-input-in-cell {
+  border-width: 2px;
+  border-style: solid;
+  /* border-radius: 10px; */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-input-in-small-cell {
+  border-width: 2px;
+  border-style: solid;
+  /* border-radius: 10px; */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 70px;
 }
 
 .text {
@@ -55,8 +83,8 @@
 
 .grid-cell-content {
   display: flex;
-  justify-self: right;
-  align-self: right;
+  justify-self: center;
+  align-self: center;
   align-items: center;
   grid-column-gap: 3px;
   grid-row-gap: 3px;
@@ -71,6 +99,22 @@
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.select-in-long-cell {
+  justify-self: stretch;
+  align-self: center;
+  /* height: 27px; */
+  width: 100%;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  /* border-radius: 10PX; */
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .stats-grid {
@@ -151,4 +195,104 @@
 
 .stats-div18 {
   grid-area: 6 / 3 / 7 / 4;
+}
+
+.name-grid {
+  display: grid;
+  grid-template-columns: .3fr 1fr;
+  grid-template-rows: 2fr repeat(5, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+
+.name-grid-div1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.name-grid-div2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.name-grid-div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.name-grid-div4 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.name-grid-div5 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.name-grid-div6 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.name-grid-div7 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.name-grid-div8 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.name-grid-div9 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.name-grid-div10 {
+  grid-area: 6 / 1 / 7 / 2;
+}
+
+.name-grid-div11 {
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+
+.level-grid-div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.level-grid-div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.level-grid-div3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.level-grid-div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.level-grid-div5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.level-grid-div6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.level-grid-div7 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.level-grid-div8 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.level-grid-div9 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.level-grid-div10 {
+  grid-area: 5 / 2 / 6 / 3;
 }
