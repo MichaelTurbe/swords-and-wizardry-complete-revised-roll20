@@ -55,6 +55,12 @@
   padding: 5px;
 }
 
+.weapons-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 .attributes-container {
   /* min-width: 200px; */
   padding: 5px;
@@ -140,6 +146,19 @@
   margin: 0;
 }
 
+.left-text {
+  vertical-align: middle;
+  text-align: left;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  margin: 0;
+}
+
+.align-left {
+  text-align: left;
+}
+
 .text-smaller {
   vertical-align: middle;
   text-align: right;
@@ -150,9 +169,23 @@
   font-size: x-small;
 }
 
+.d20 {
+  font-family: dicefontd20;
+  font-size: larger;
+}
+
 .grid-cell-content {
   display: flex;
   justify-self: center;
+  align-self: center;
+  align-items: center;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+}
+
+.left-aligned-grid-cell-content {
+  display: flex;
+  justify-self: left;
   align-self: center;
   align-items: center;
   grid-column-gap: 3px;
@@ -544,4 +577,45 @@
 
 .split-attribute-bonuses-grid-div21 {
   grid-area: 6 / 4 / 7 / 5;
+}
+
+.weapon-row-grid {
+  display: grid;
+  grid-template-columns: 1.75fr .5fr .25fr .2fr .5fr .5fr .2fr .5fr;
+  grid-template-rows: .5fr;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
+  padding: 3px;
+}
+
+.weapon-row-grid-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.weapon-row-grid-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.weapon-row-grid-3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.weapon-row-grid-4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.weapon-row-grid-5 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.weapon-row-grid-6 {
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+.weapon-row-grid-7 {
+  grid-area: 1 / 7 / 2 / 8;
+}
+
+.weapon-row-grid-8 {
+  grid-area: 1 / 8 / 2 / 9;
 }
