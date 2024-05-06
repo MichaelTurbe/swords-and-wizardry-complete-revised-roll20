@@ -219,6 +219,14 @@
   font-style: normal;
 }
 
+.tab-button {
+  border-radius: 8px;
+  border-color: rgb(0, 0, 0);
+  border-width: .5px;
+  border-style: solid;
+  height: 40px;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: 1fr repeat(2, .25fr);
